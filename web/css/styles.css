@@ -1,0 +1,353 @@
+/* Gravitational Authority Model Visualization Styles */
+
+/* Base Styles */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: #f8f8f8;
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #00FF7F;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+  color: #f8f8f8;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: #00FF7F;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00cc66;
+  text-decoration: underline;
+}
+
+/* Header */
+.header {
+  background-color: #000;
+  padding: 20px 0;
+  border-bottom: 2px solid #00FF7F;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00FF7F;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-left: 30px;
+}
+
+.nav a {
+  color: #f8f8f8;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #00FF7F;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #111;
+  border-bottom: 1px solid #333;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00FF7F;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00cc66;
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: #000;
+}
+
+/* Visualization Container */
+.visualization-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px;
+}
+
+/* Tabs Navigation */
+.visualization-tabs {
+  display: flex;
+  background-color: #222;
+  border-bottom: 2px solid #00FF7F;
+}
+
+.tab-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  text-align: center;
+}
+
+.tab-button:hover {
+  background-color: rgba(0, 255, 127, 0.1);
+}
+
+.tab-button.active {
+  background-color: rgba(0, 255, 127, 0.2);
+  border-bottom: 3px solid #00FF7F;
+}
+
+/* Tab Content */
+.visualization-content {
+  padding: 20px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive Images */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+/* Caption Styling */
+.visualization-caption {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 6px;
+  border-left: 4px solid #00FF7F;
+}
+
+.visualization-caption h3 {
+  color: #00FF7F;
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.visualization-caption p {
+  color: #eee;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.visualization-caption ul, 
+.visualization-caption ol {
+  color: #eee;
+  padding-left: 20px;
+}
+
+.visualization-caption li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.visualization-caption strong {
+  color: #00FF7F;
+}
+
+/* Report Section */
+.report-section {
+  padding: 60px 0;
+  border-bottom: 1px solid #333;
+}
+
+.report-card {
+  background-color: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.report-card-header {
+  background-color: #333;
+  padding: 20px;
+  border-bottom: 2px solid #00FF7F;
+}
+
+.report-card-header h3 {
+  margin: 0;
+  color: #00FF7F;
+}
+
+.report-card-body {
+  padding: 20px;
+}
+
+.report-card-body p {
+  margin-bottom: 15px;
+}
+
+.report-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  padding: 40px 0;
+  text-align: center;
+  border-top: 2px solid #00FF7F;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.social-links {
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00FF7F;
+}
+
+.copyright {
+  font-size: 0.875rem;
+  color: #777;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .nav ul {
+    margin-top: 15px;
+    justify-content: center;
+  }
+  
+  .nav li {
+    margin: 0 10px;
+  }
+  
+  .hero {
+    padding: 40px 0;
+  }
+  
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+  
+  .visualization-tabs {
+    flex-direction: column;
+  }
+  
+  .tab-button {
+    padding: 12px;
+  }
+  
+  .visualization-content {
+    padding: 15px;
+  }
+  
+  .visualization-caption {
+    padding: 15px;
+  }
+}
